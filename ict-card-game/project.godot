@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="ICT-Card-Game"
+run/main_scene="res://Scenes/test2.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
