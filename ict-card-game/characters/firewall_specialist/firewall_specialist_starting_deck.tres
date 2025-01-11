@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CardPile" load_steps=5 format=3 uid="uid://dqdcke16iar3u"]
+
+[ext_resource type="Script" path="res://custom_resources/card.gd" id="1_e4qr4"]
+[ext_resource type="Script" path="res://custom_resources/card_pile.gd" id="2_dlb5g"]
+[ext_resource type="Resource" uid="uid://bdmr3738ymgil" path="res://characters/firewall_specialist/cards/block_network_attack.tres" id="2_jprb6"]
+[ext_resource type="Resource" uid="uid://c5ictgf1mma5w" path="res://characters/firewall_specialist/cards/packet_filter.tres" id="3_d8v34"]
+
+[resource]
+script = ExtResource("2_dlb5g")
+cards = Array[ExtResource("1_e4qr4")]([ExtResource("2_jprb6"), ExtResource("2_jprb6"), ExtResource("2_jprb6"), ExtResource("2_jprb6"), ExtResource("2_jprb6"), ExtResource("3_d8v34"), ExtResource("3_d8v34"), ExtResource("3_d8v34"), ExtResource("3_d8v34"), ExtResource("3_d8v34")])

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://bu1yjxgk0pn7o"]
+
+[ext_resource type="Texture2D" uid="uid://cpydvk8mq66o5" path="res://placeholder-art/tile_0087.png" id="1_7iyth"]
+[ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_sqidw"]
+[ext_resource type="Resource" uid="uid://dqdcke16iar3u" path="res://characters/firewall_specialist/firewall_specialist_starting_deck.tres" id="3_x7m5w"]
+
+[resource]
+script = ExtResource("1_sqidw")
+starting_deck = ExtResource("3_x7m5w")
+cards_per_turn = 4
+max_mana = 3
+max_health = 35
+art = ExtResource("1_7iyth")
