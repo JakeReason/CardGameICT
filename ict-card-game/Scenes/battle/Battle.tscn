@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ud53jpg7wv7a"]
+[gd_scene load_steps=13 format=3 uid="uid://ud53jpg7wv7a"]
 
 [ext_resource type="Texture2D" uid="uid://cp4iq5fd6j8be" path="res://placeholder-art/background.png" id="1_n7h37"]
 [ext_resource type="Script" path="res://Scenes/ui/hand.gd" id="2_pknkf"]
@@ -10,6 +10,7 @@
 [ext_resource type="Resource" uid="uid://bu1yjxgk0pn7o" path="res://characters/firewall_specialist/firewall_specialist.tres" id="4_lg7tu"]
 [ext_resource type="Resource" uid="uid://bdmr3738ymgil" path="res://characters/firewall_specialist/cards/block_network_attack.tres" id="5_i8p6b"]
 [ext_resource type="Resource" uid="uid://c5ictgf1mma5w" path="res://characters/firewall_specialist/cards/packet_filter.tres" id="6_hcl2e"]
+[ext_resource type="PackedScene" uid="uid://b7h3ke6a12iqt" path="res://Scenes/card_ui/mana_ui.tscn" id="11_87wgk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m01b1"]
 size = Vector2(256, 100)
@@ -57,14 +58,24 @@ grow_vertical = 0
 alignment = 1
 script = ExtResource("2_pknkf")
 
-[node name="CardUI" parent="BattleUI/Hand" instance=ExtResource("3_eygq5")]
+[node name="CardUI2" parent="BattleUI/Hand" instance=ExtResource("3_eygq5")]
 layout_mode = 2
 card = ExtResource("5_i8p6b")
 
-[node name="CardUI2" parent="BattleUI/Hand" instance=ExtResource("3_eygq5")]
+[node name="CardUI" parent="BattleUI/Hand" instance=ExtResource("3_eygq5")]
 layout_mode = 2
 card = ExtResource("5_i8p6b")
 
 [node name="CardUI3" parent="BattleUI/Hand" instance=ExtResource("3_eygq5")]
 layout_mode = 2
 card = ExtResource("6_hcl2e")
+
+[node name="ManaUI" parent="." instance=ExtResource("11_87wgk")]
+offset_left = 5.0
+offset_top = 119.0
+offset_right = 23.0
+offset_bottom = 138.0
+script = null
+
+[connection signal="area_entered" from="Enemy" to="Enemy" method="_on_area_entered"]
+[connection signal="area_exited" from="Enemy" to="Enemy" method="_on_area_exited"]

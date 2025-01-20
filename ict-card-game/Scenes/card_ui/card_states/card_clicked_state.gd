@@ -1,9 +1,8 @@
 extends CardState
 
+const MOUSE_Y_SNAPBACK_THRESHOLD := 138
 
 func enter() -> void:
-	card_ui.color.color = Color.ORANGE
-	card_ui.state.text = "CLICKED"
 	card_ui.drop_point_detector.monitoring = true
 
 
