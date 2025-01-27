@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scenes/battle/battle.gd" id="1_cqao5"]
 [ext_resource type="Script" path="res://Scenes/ui/hand.gd" id="2_pknkf"]
 [ext_resource type="PackedScene" uid="uid://n5m1v7raa2t2" path="res://Scenes/enemy/enemy.tscn" id="2_v0jcr"]
-[ext_resource type="AudioStream" uid="uid://dpdenqqbovwfq" path="res://placeholder-art/8_bit_iced_village_lofi.mp3" id="3_al7t4"]
+[ext_resource type="AudioStream" uid="uid://dpdenqqbovwfq" path="res://art/8_bit_iced_village_lofi.mp3" id="3_al7t4"]
 [ext_resource type="PackedScene" uid="uid://foowne8hjgyb" path="res://Scenes/card_target_selector/card_target_selector.tscn" id="3_e8xfw"]
 [ext_resource type="PackedScene" uid="uid://bsnxhrjrehysj" path="res://Scenes/player/player.tscn" id="3_rvk4t"]
 [ext_resource type="Texture2D" uid="uid://do3v5ga75683p" path="res://art/shop_2a.png" id="4_aqv34"]
@@ -88,8 +88,10 @@ script = ExtResource("2_pknkf")
 char_stats = ExtResource("4_lg7tu")
 
 [node name="Tooltip" parent="BattleUI" instance=ExtResource("12_7gpiq")]
-offset_top = 6.0
-offset_bottom = 42.0
+offset_left = -115.0
+offset_top = 5.0
+offset_right = 25.0
+offset_bottom = 65.0
 
 [node name="EndTurnButton" type="Button" parent="BattleUI"]
 unique_name_in_owner = true

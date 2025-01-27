@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b2ulboxswbljk" path="res://art/attack_4_fb.png" id="1_gm5ky"]
 [ext_resource type="Script" path="res://characters/firewall_specialist/cards/decoy_deployment.gd" id="1_v1d4c"]
-[ext_resource type="AudioStream" uid="uid://dixklg6g4jnsq" path="res://placeholder-art/slash.ogg" id="3_cx8mv"]
+[ext_resource type="AudioStream" uid="uid://rtrdoxet11pt" path="res://art/explosion (1).wav" id="3_ejh70"]
 
 [resource]
 script = ExtResource("1_v1d4c")
@@ -11,5 +11,8 @@ type = 0
 target = 2
 cost = 2
 icon = ExtResource("1_gm5ky")
-tooltip_text = "[center]Deal [color=\"ff0000\"]4[/color] damage to all enemies. [/center]"
-sound = ExtResource("3_cx8mv")
+tooltip_text = "[center]Decoy Deployment
+Deal [color=\"ff0000\"]8[/color] damage to all enemies.
+actively intercepts and neutralizes malicous traffic
+ [/center]"
+sound = ExtResource("3_ejh70")

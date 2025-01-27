@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://chrfkxqg4d5b3" path="res://art/defend_1_fb.png" id="1_xelw7"]
 [ext_resource type="Script" path="res://characters/firewall_specialist/cards/data_firewall.gd" id="2_ebtgd"]
-[ext_resource type="AudioStream" uid="uid://df64e7qat73gs" path="res://placeholder-art/block.ogg" id="3_jdefc"]
+[ext_resource type="AudioStream" uid="uid://d0gs6vgfl0nir" path="res://art/powerUp2.wav" id="3_5b7wp"]
 
 [resource]
 script = ExtResource("2_ebtgd")
@@ -11,7 +11,8 @@ type = 1
 target = 0
 cost = 1
 icon = ExtResource("1_xelw7")
-tooltip_text = "[center]Gain [color=\"0044ff\"]5[/color] block.
-
+tooltip_text = "[center]Data Firewall
+Gain [color=\"0044ff\"]5[/color] block.
+Blocks a network-based attack by detecting suspicious traffic patterns
 [/center]"
-sound = ExtResource("3_jdefc")
+sound = ExtResource("3_5b7wp")

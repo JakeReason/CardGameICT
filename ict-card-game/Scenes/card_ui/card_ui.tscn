@@ -5,7 +5,7 @@
 [ext_resource type="StyleBox" uid="uid://dr8dfwxe3dj6h" path="res://Scenes/card_ui/card_base_stylebox.tres" id="3_a0ipg"]
 [ext_resource type="Script" path="res://Scenes/card_ui/card_state_machine.gd" id="3_h26od"]
 [ext_resource type="Script" path="res://Scenes/card_ui/card_states/card_base_state.gd" id="4_dmuyu"]
-[ext_resource type="Texture2D" uid="uid://c6rme2o6dyaoj" path="res://placeholder-art/tile_0104.png" id="4_qs052"]
+[ext_resource type="Texture2D" uid="uid://r4o4muxwhhom" path="res://art/attack_3_fb.png" id="4_wiki4"]
 [ext_resource type="Script" path="res://Scenes/card_ui/card_states/card_clicked_state.gd" id="5_u1l7l"]
 [ext_resource type="Script" path="res://Scenes/card_ui/card_states/card_dragging_state.gd" id="6_q284y"]
 [ext_resource type="Script" path="res://Scenes/card_ui/card_states/card_released_state.gd" id="7_ql60q"]
@@ -59,7 +59,7 @@ offset_bottom = 5.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("4_qs052")
+texture = ExtResource("4_wiki4")
 expand_mode = 1
 stretch_mode = 5
 
