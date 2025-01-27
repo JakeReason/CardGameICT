@@ -1,0 +1,37 @@
+[gd_scene load_steps=11 format=3 uid="uid://dnsxqvet1ewwa"]
+
+[ext_resource type="Script" path="res://Scenes/enemy/enemy_action_picker.gd" id="1_kl65c"]
+[ext_resource type="Script" path="res://enemies/DDoS Attacker/ddos_attacker_attack_action.gd" id="2_tj3oe"]
+[ext_resource type="Script" path="res://enemies/DDoS Attacker/ddos_attacker_block_action.gd" id="3_ob2gj"]
+[ext_resource type="Texture2D" uid="uid://nalmpxl3ioxt" path="res://art/defend_3a.png" id="3_qj78f"]
+[ext_resource type="Script" path="res://custom_resources/intent.gd" id="4_5wd6v"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://placeholder-art/enemy_attack.ogg" id="5_yw1wl"]
+[ext_resource type="Texture2D" uid="uid://chrfkxqg4d5b3" path="res://art/defend_1_fb.png" id="7_jo2t1"]
+[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://placeholder-art/enemy_block.ogg" id="8_wmatn"]
+
+[sub_resource type="Resource" id="Resource_2uomf"]
+script = ExtResource("4_5wd6v")
+number = "2x4"
+icon = ExtResource("3_qj78f")
+
+[sub_resource type="Resource" id="Resource_itaws"]
+script = ExtResource("4_5wd6v")
+number = ""
+icon = ExtResource("7_jo2t1")
+
+[node name="DDoSAttackerEnemyAI" type="Node"]
+script = ExtResource("1_kl65c")
+
+[node name="DDoSAttackerAttackAction" type="Node" parent="."]
+script = ExtResource("2_tj3oe")
+intent = SubResource("Resource_2uomf")
+sound = ExtResource("5_yw1wl")
+type = 1
+chance_weight = 3.0
+
+[node name="DDosAttackerBlockAction" type="Node" parent="."]
+script = ExtResource("3_ob2gj")
+intent = SubResource("Resource_itaws")
+sound = ExtResource("8_wmatn")
+type = 1
+chance_weight = 1.0

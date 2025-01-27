@@ -2,8 +2,8 @@
 
 [ext_resource type="Theme" uid="uid://dvt8gwrukajbv" path="res://Main-Theme.tres" id="1_3f6wo"]
 [ext_resource type="Script" path="res://Scenes/ui/stats_ui.gd" id="2_h4qao"]
-[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://placeholder-art/tile_0102.png" id="2_msbup"]
-[ext_resource type="Texture2D" uid="uid://d0edy7thj8ce6" path="res://placeholder-art/heart.png" id="3_thfv5"]
+[ext_resource type="Texture2D" uid="uid://bnqbvqytg3j1i" path="res://art/defend_1.png" id="3_d7y6k"]
+[ext_resource type="Texture2D" uid="uid://c3isktc0j0civ" path="res://art/heart_a.png" id="4_dgiww"]
 
 [node name="StatsUI" type="HBoxContainer"]
 anchors_preset = 5
@@ -19,11 +19,11 @@ script = ExtResource("2_h4qao")
 
 [node name="Block" type="HBoxContainer" parent="."]
 layout_mode = 2
-theme_override_constants/separation = 0
+theme_override_constants/separation = 2
 
 [node name="BlockImage" type="TextureRect" parent="Block"]
 layout_mode = 2
-texture = ExtResource("2_msbup")
+texture = ExtResource("3_d7y6k")
 stretch_mode = 5
 
 [node name="BlockLabel" type="Label" parent="Block"]
@@ -40,7 +40,7 @@ theme_override_constants/separation = 2
 
 [node name="HealthImage" type="TextureRect" parent="Health"]
 layout_mode = 2
-texture = ExtResource("3_thfv5")
+texture = ExtResource("4_dgiww")
 stretch_mode = 5
 
 [node name="HealthLabel" type="Label" parent="Health"]

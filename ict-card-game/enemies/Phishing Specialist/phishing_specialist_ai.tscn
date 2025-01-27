@@ -1,0 +1,49 @@
+[gd_scene load_steps=14 format=3 uid="uid://bc38oxnnyad3v"]
+
+[ext_resource type="Script" path="res://Scenes/enemy/enemy_action_picker.gd" id="1_aar8m"]
+[ext_resource type="Script" path="res://enemies/Phishing Specialist/phishing_specialist_attack_action.gd" id="2_5w1ax"]
+[ext_resource type="Texture2D" uid="uid://nalmpxl3ioxt" path="res://art/defend_3a.png" id="3_j2r8r"]
+[ext_resource type="Script" path="res://enemies/Phishing Specialist/phishing_specialist_block_action.gd" id="3_xlp1h"]
+[ext_resource type="Script" path="res://custom_resources/intent.gd" id="4_6f4a5"]
+[ext_resource type="Script" path="res://enemies/Phishing Specialist/phishing_specialist_mega_block_action.gd" id="4_dif74"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://placeholder-art/enemy_attack.ogg" id="5_gc3og"]
+[ext_resource type="Texture2D" uid="uid://chrfkxqg4d5b3" path="res://art/defend_1_fb.png" id="7_1236u"]
+[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://placeholder-art/enemy_block.ogg" id="8_118xs"]
+[ext_resource type="Texture2D" uid="uid://be61gowprekhj" path="res://art/defend_4a_fb.png" id="10_8v8wv"]
+
+[sub_resource type="Resource" id="Resource_vfovi"]
+script = ExtResource("4_6f4a5")
+number = "7"
+icon = ExtResource("3_j2r8r")
+
+[sub_resource type="Resource" id="Resource_nk6pl"]
+script = ExtResource("4_6f4a5")
+number = ""
+icon = ExtResource("7_1236u")
+
+[sub_resource type="Resource" id="Resource_7hve0"]
+script = ExtResource("4_6f4a5")
+number = ""
+icon = ExtResource("10_8v8wv")
+
+[node name="PhishingSpecialistAI" type="Node"]
+script = ExtResource("1_aar8m")
+
+[node name="AttackAction" type="Node" parent="."]
+script = ExtResource("2_5w1ax")
+intent = SubResource("Resource_vfovi")
+sound = ExtResource("5_gc3og")
+type = 1
+chance_weight = 5.0
+
+[node name="BlockAction" type="Node" parent="."]
+script = ExtResource("3_xlp1h")
+intent = SubResource("Resource_nk6pl")
+sound = ExtResource("8_118xs")
+type = 1
+chance_weight = 5.0
+
+[node name="MegaBlockAction" type="Node" parent="."]
+script = ExtResource("4_dif74")
+intent = SubResource("Resource_7hve0")
+sound = ExtResource("8_118xs")

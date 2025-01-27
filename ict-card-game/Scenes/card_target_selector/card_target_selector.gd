@@ -14,7 +14,7 @@ func _ready() -> void:
 	Events.card_aim_ended.connect(_on_card_aim_ended)
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if not targeting:
 		return
 	

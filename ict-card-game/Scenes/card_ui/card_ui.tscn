@@ -2,10 +2,10 @@
 
 [ext_resource type="Theme" uid="uid://dvt8gwrukajbv" path="res://Main-Theme.tres" id="1_52d1f"]
 [ext_resource type="Script" path="res://Scenes/card_ui/card_ui.gd" id="2_n0047"]
-[ext_resource type="StyleBox" uid="uid://diups1kljwqi" path="res://Scenes/card_ui/card_base_stylebox.tres" id="3_b2x40"]
+[ext_resource type="StyleBox" uid="uid://dr8dfwxe3dj6h" path="res://Scenes/card_ui/card_base_stylebox.tres" id="3_a0ipg"]
 [ext_resource type="Script" path="res://Scenes/card_ui/card_state_machine.gd" id="3_h26od"]
 [ext_resource type="Script" path="res://Scenes/card_ui/card_states/card_base_state.gd" id="4_dmuyu"]
-[ext_resource type="Texture2D" uid="uid://c6rme2o6dyaoj" path="res://placeholder-art/tile_0104.png" id="4_w86vo"]
+[ext_resource type="Texture2D" uid="uid://c6rme2o6dyaoj" path="res://placeholder-art/tile_0104.png" id="4_qs052"]
 [ext_resource type="Script" path="res://Scenes/card_ui/card_states/card_clicked_state.gd" id="5_u1l7l"]
 [ext_resource type="Script" path="res://Scenes/card_ui/card_states/card_dragging_state.gd" id="6_q284y"]
 [ext_resource type="Script" path="res://Scenes/card_ui/card_states/card_released_state.gd" id="7_ql60q"]
@@ -35,7 +35,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-theme_override_styles/panel = ExtResource("3_b2x40")
+theme_override_styles/panel = ExtResource("3_a0ipg")
 
 [node name="Cost" type="Label" parent="."]
 layout_mode = 0
@@ -46,10 +46,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Icon" type="TextureRect" parent="."]
-show_behind_parent = true
-light_mask = 3
-visibility_layer = 3
-clip_contents = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -63,7 +59,7 @@ offset_bottom = 5.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("4_w86vo")
+texture = ExtResource("4_qs052")
 expand_mode = 1
 stretch_mode = 5
 
@@ -72,11 +68,8 @@ collision_mask = 2
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DropPointDetector"]
-light_mask = 3
-visibility_layer = 3
 position = Vector2(12.5, 15)
 shape = SubResource("RectangleShape2D_tagul")
-debug_color = Color(0.332956, 0.510032, 0.934475, 0.42)
 
 [node name="CardStateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("3_h26od")

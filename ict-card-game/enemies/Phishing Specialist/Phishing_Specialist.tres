@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EnemyStats" load_steps=4 format=3 uid="uid://bttsil25yfehk"]
+
+[ext_resource type="PackedScene" uid="uid://bc38oxnnyad3v" path="res://enemies/Phishing Specialist/phishing_specialist_ai.tscn" id="1_8iy7f"]
+[ext_resource type="Script" path="res://custom_resources/enemy_stats.gd" id="1_gmojy"]
+[ext_resource type="Texture2D" uid="uid://3m5s7m3rfrk" path="res://art/hacker_9.png" id="2_rif1n"]
+
+[resource]
+script = ExtResource("1_gmojy")
+ai = ExtResource("1_8iy7f")
+max_health = 10
+art = ExtResource("2_rif1n")

@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://c5ictgf1mma5w"]
-
-[ext_resource type="Script" path="res://custom_resources/card.gd" id="1_x0cvs"]
-
-[resource]
-script = ExtResource("1_x0cvs")
-id = "packet_filter"
-type = 0
-target = 1

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://bdmr3738ymgil"]
+
+[ext_resource type="Texture2D" uid="uid://r4o4muxwhhom" path="res://art/attack_3_fb.png" id="1_el7qc"]
+[ext_resource type="Script" path="res://characters/firewall_specialist/cards/rate_limiter.gd" id="2_bporj"]
+[ext_resource type="AudioStream" uid="uid://b1vpjjmi5cj3n" path="res://placeholder-art/axe.ogg" id="3_g8yn2"]
+
+[resource]
+script = ExtResource("2_bporj")
+id = "rate_limiter"
+type = 0
+target = 1
+cost = 1
+icon = ExtResource("1_el7qc")
+tooltip_text = "[center]Deal [color=\"ff0000\"]6[/color]
+damage.[/center]"
+sound = ExtResource("3_g8yn2")

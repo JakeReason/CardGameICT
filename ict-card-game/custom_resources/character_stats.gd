@@ -24,6 +24,13 @@ func can_play_card(card: Card) -> bool:
 	return mana >= card.cost
 
 
+func take_damage(damage: int) -> void:
+	var initial_health := health
+	super.take_damage(damage)
+	if initial_health > health:
+		Events.player_hit.emit()
+
+
 func create_instance() -> Resource:
 	var instance: CharacterStats = self.duplicate()
 	instance.health = max_health

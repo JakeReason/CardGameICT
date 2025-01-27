@@ -18,6 +18,9 @@ config/icon="res://icon.svg"
 [autoload]
 
 Events="*res://global/events.gd"
+Shaker="*res://global/shaker.gd"
+MusicPlayer="*res://global/music_player.tscn"
+SFXPlayer="*res://global/sfx_player.tscn"
 
 [display]
 
@@ -31,6 +34,10 @@ window/stretch/mode="viewport"
 
 player=""
 enemies=""
+
+[gui]
+
+theme/custom="res://Main-Theme.tres"
 
 [input]
 

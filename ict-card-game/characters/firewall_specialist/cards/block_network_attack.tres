@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://bdmr3738ymgil"]
-
-[ext_resource type="Script" path="res://custom_resources/card.gd" id="1_dqxq6"]
-
-[resource]
-script = ExtResource("1_dqxq6")
-id = "block_network_attack"
-type = 1
-target = 0
